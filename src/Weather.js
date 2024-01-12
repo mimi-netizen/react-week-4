@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -15,5 +14,5 @@ export default function Weather(props) {
 
   axios.get(apiUrl).then(handleResponse);
 
-  return <h3>Hello</h3>;
+  return <h4>Hello</h4>;
 }
